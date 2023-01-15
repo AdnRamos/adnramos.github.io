@@ -1,0 +1,19 @@
+.containerHeader{
+    justify-content: space-araund;
+}
+.containerHeader>img{
+    margin-top: 5em;
+    width: 14em;
+    height: 14em;
+    padding: 0.2em;
+    border: 0.2em solid var(--purple);
+    border-radius: 50em;
+}
+.containerHeader>h2{
+    width: 16.5em;
+    margin: 2em 0em 2em 0em;
+    font-weight: 600;
+    text-align: center;
+    
+}
+

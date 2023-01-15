@@ -1,0 +1,9 @@
+.containerSocial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.containerSocial>a{
+    padding: 1.5em 0.8em;
+}
