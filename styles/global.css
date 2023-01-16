@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 :root {
-    --body-bg-color: #FAF7FD;
-    --purple: #BB99DD;
+    --body-bg-color: #22212C;
+    --green: #459268;
 }
 
 *{
     background-color: var(--body-bg-color);
-    color: var(--purple);
+    color: var(--green);
     font-family: Poppins;
 }
 body{
@@ -15,6 +15,7 @@ body{
     justify-content: center;
 }
 header, main, footer{
+    
     display: flex;
     flex-direction: column;
     align-items: center;

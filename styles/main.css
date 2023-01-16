@@ -1,19 +1,23 @@
 .containerMain{
     justify-content: space-evenly;
+    
 }
+
 .bnt{
     width: 26em;
     height: 4em;
     background-color: var(--body-bg-color);
-    border: 0.17em solid var(--purple);
+    border: none;
     color: var(--purple);
     font-weight: 600;
+    box-shadow: -0.08em -0.08em var(--green), 0.08em 0.08em var(--green);
 
     border-radius: 0.3em;
     margin: 0.5em 0em 0.5em 0em;
+
 }
 .bnt:hover{
-    background-color: var(--purple);
+    background-color: var(--green);
     color: var(--body-bg-color);
     transition: 0.7s;
 }
