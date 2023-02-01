@@ -1,49 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdnRamos</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdnRamos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="containerHeader">
-        <img src="./assets/Perfil.jpeg" alt="">
-        <h2>
-            Web Developer.
-        </h2>
-    </header>
-    <main class="containerMain">
-        <a target="_blank" href="https://adnramos.github.io/-portifolio/">
-            <button class="bnt">Portifolio</button>
-        </a>
-        <a target=" _self" href="https://www.linkedin.com/in/ade-ramos-6599a1251/">
-            <button class="bnt">Linkedin</button>
-        </a>
-        <a target=" _self" href="https://app.rocketseat.com.br/me/adenilson-ferreira-ramos-07820">
-            <button class="bnt">RocketSeat</button>
-        </a>
-        <a target=" _self" href="https://github.com/AdnRamos">
-            <button class="bnt">Github</button>
-        </a>
+  <div id="container">
+    <div id="profile">
+      <img src="./assets/profile.jpeg" alt="profile ">
+      <p>@AdeRamos</p>
+    </div>
+    <div id="switch" onclick= "toggleModel()">
+      <button>
+      </button>
+      <span></span>
+    </div>
 
-    </main>
-    <footer class="containerSocial">
-        <a target=" _self" href="https://github.com/AdnRamos">
-            <img src="./assets/github.svg" alt="Github">
-        </a>
-        <a target=" _self" href="https://www.instagram.com/adn_framos/">
-            <img src="./assets/instagram.svg" alt="Instagram">
-        </a>
-        <a target=" _self" href="https://www.linkedin.com/in/ade-ramos-6599a1251/">
-            <img src="./assets/linkedin.svg" alt="Linkedin">
-        </a>
-    </footer>
-    
+    <ul>
+      <li>
+        <div class="dropdown">
+          <button onclick="drop()" class="dropbtn">Click to know me</button>
+          <div id="myDropdown" class="dropdown-content">
+            <p>Hello, my name is <strong>Adenilson</strong>, I am a Computer Science student at the Federal Rural University of Agreste in Pernambuco.
+              Studying the Stack: Html, CSS, Javascript, React.js, React Native and Node.Js. If you want to see a little more follow the links below.
+            </p>
+          </div>
+        </div> 
+      </li>
+      <li><a href="https://github.com/AdnRamos" id="">To see my Portifolio</a></li>
+      <li><a href="https://www.instagram.com/adn_framos" id="">If you want see my Instagram</a></li>
+      <li><a href="www.linkedin.com/in/adn-ramos" id="">My profile on Linkedin</a></li>
+    </ul>
+    <div id="social">
+      <a href="https://github.com/AdnRamos" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a href=https://www.instagram.com/adn_framos" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="www.linkedin.com/in/adn-ramos" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./scripts/toggleModel.js"></script>
+  <script src="./scripts/dropDown.js"></script>
 </body>
 </html>
