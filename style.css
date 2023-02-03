@@ -38,8 +38,8 @@ body * {
 }
 
 #container{
-  width: 360px;
-  height: 712px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0;
   padding: 0 24px;
 }
@@ -113,31 +113,19 @@ ul{
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content{
   display: none;
   position: block;
-
   text-align: justify;
   font-size: 14px;
 }
-.dropbtn{
-  width: 19.3em;
-  padding: 16px 24px;
-  background-color: var(--surface-color);
-  border: 1px solid var(--stroke-color);
-  border-radius: 1.2em;
-  font-size: 16px;
-  font-weight: 500;
 
-
-}
 
 .show {display:block;}
 
-ul li a, .dropbtn>p{
+ul li a, .dropbtn{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,3 +173,12 @@ ul li a:hover, .dropbtn:hover {
   border-radius: 5em;
 
 }
+
+@media (min-width: 700px) {
+    :root{
+      --bg-url: url(./assets/bg-desk-dark.png);
+    }
+    .light{
+      --bg-url: url(./assets/bg-desk-light.png);
+    }
+} 

@@ -1,6 +1,9 @@
 function drop() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+
+const button = document.documentElement
+
 window.onclick = function (event){
   if(!event.target.matches('.dropbtn')){
     var dropdowns = document.getElementsByClassName("dropdown-content")
@@ -9,6 +12,7 @@ window.onclick = function (event){
       const openDropdown = dropdowns[i]
       if(openDropdown.classList.contains('show')){
         openDropdown.classList.remove('show')
+        
       }
     }
   }
