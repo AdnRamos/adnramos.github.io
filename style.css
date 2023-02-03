@@ -68,23 +68,29 @@ body * {
 }
 
 #switch button{
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 
-    border-radius: 5em;
-    background: white var(--bg-img-button) no-repeat center ;
-    border: 0;
+  border-radius: 5em;
+  background: white var(--bg-img-button) no-repeat center ;
+  border: 0;
 
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 1;
-    transform: translateY(-50%)
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-dark 0.4s forwards;
+
 }
 
 .light #switch button{
-  right: 0;
-  left: initial;
+  animation: slide-light 0.4s forwards;
+}
+
+#switch button:hover{
+  outline: 8px solid var(--social-link-hover);
 }
 
 #switch span {
@@ -181,3 +187,21 @@ ul li a:hover, .dropbtn:hover {
       --bg-url: url(./assets/bg-desk-light.png);
     }
 } 
+
+@keyframes slide-light{
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+
+@keyframes slide-dark{
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
+  }
+}
