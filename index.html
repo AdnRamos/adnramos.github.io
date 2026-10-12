@@ -57,10 +57,11 @@
     <section id="top" class="hero wrap">
       <div class="hero-text">
         <h1><span data-i18n="hi">Olá, eu sou</span> <span class="grad">Adenilson Ramos</span></h1>
-        <p class="lead" data-i18n="lead">Graduando em Ciência da Computação na UFAPE. Desenvolvo software full-stack (Java, Spring, React e Next.js) e pesquiso IA, LLMs e visão computacional.</p>
+        <p class="lead" data-i18n="lead">Graduando em Ciência da Computação na UFAPE. Desenvolvo sistemas de gestão pública para prefeituras com Java e Spring Boot, aplicações web com React e Next.js, e pesquiso IA, LLMs e visão computacional.</p>
         <div class="cta">
           <a class="btn primary" href="#projetos" data-i18n="cta_projects">Ver projetos</a>
           <a class="btn" href="#contato" data-i18n="cta_contact">Fale comigo</a>
+          <a class="btn" id="cv-link" href="curriculo/Curriculo-Adenilson-Ramos.pdf" download data-i18n="cv">Baixar currículo</a>
         </div>
         <ul class="social" aria-label="Redes">
           <li><a href="https://github.com/AdnRamos" target="_blank" rel="noopener" aria-label="GitHub"><svg width="22" height="22"><use href="#gh"/></svg></a></li>
@@ -79,7 +80,7 @@
       <div class="about">
         <div class="about-text">
           <p data-i18n="about_p1">Graduando em Ciência da Computação pela Universidade Federal do Agreste de Pernambuco (UFAPE), em Garanhuns. Tenho experiência em diferentes áreas de tecnologia, com foco em desenvolvimento de software, do front-end ao back-end.</p>
-          <p data-i18n="about_p2">Mantenho interesse em pesquisa: já atuei em projetos de Visão Computacional e Gestão Municipal, e hoje comparo consumo de energia, memória e desempenho de código gerado por diferentes LLMs.</p>
+          <p data-i18n="about_p2">Atuo desde 2024 na WS Assessoria e Consultoria Municipal, onde desenvolvo o WS-Services, plataforma de microsserviços usada por prefeituras como Correntes, Calçados, Paranatama e Bom Conselho, com mais de 30 unidades gestoras. Também faço pesquisa (LLMs, visão computacional), extensão e monitoria na UFAPE.</p>
           <p data-i18n="about_p3">Tenho facilidade para trabalhar em equipe, boa capacidade de resolver problemas e estou sempre buscando aprimorar minhas habilidades técnicas, porque o melhor jeito de aprender é construir.</p>
         </div>
         <div class="side">
@@ -87,7 +88,7 @@
             <div><dt id="stat-repos">21+</dt><dd data-i18n="st_repos">repositórios públicos</dd></div>
             <div><dt id="stat-contrib">—</dt><dd data-i18n="st_contrib">contribuições em 12 meses</dd></div>
             <div><dt id="stat-followers">—</dt><dd data-i18n="st_followers">seguidores</dd></div>
-            <div><dt id="stat-stars">—</dt><dd data-i18n="st_stars">estrelas recebidas</dd></div>
+            <div><dt>30+</dt><dd data-i18n="st_units">unidades gestoras atendidas</dd></div>
             <div><dt id="stat-since">2022</dt><dd data-i18n="st_since">construindo no GitHub desde</dd></div>
             <div><dt>3</dt><dd data-i18n="st_research">áreas de pesquisa</dd></div>
           </dl>
@@ -113,23 +114,28 @@
     <section id="stack" class="wrap section">
       <h2><span class="num">03</span> <span data-i18n="stack_t">Stack & ferramentas</span></h2>
       <div class="stack">
-        <div><h3>Front-end</h3><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React.js</li><li>Next.js</li><li>Tailwind CSS</li></ul></div>
-        <div><h3>Back-end</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>Node.js</li><li>PostgreSQL</li><li>REST</li></ul></div>
-        <div><h3 data-i18n="s_data">Dados & IA</h3><ul class="tags"><li>Python</li><li>Google ADK</li><li>Vertex AI</li><li>LLMs</li><li>Visão Computacional</li></ul></div>
-        <div><h3 data-i18n="s_tools">DevOps & Ferramentas</h3><ul class="tags"><li>Docker</li><li>Nginx</li><li>Cloud Run</li><li>GitHub Actions</li><li>Terraform</li><li>Git</li><li>Figma</li></ul></div>
+        <div><h3>Front-end</h3><ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>React.js</li><li>Next.js</li><li>Flutter</li><li>HTML</li><li>CSS</li><li>Tailwind CSS</li></ul></div>
+        <div><h3>Back-end</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>JSF / PrimeFaces</li><li>Python</li><li>FastAPI</li><li>Node.js</li><li>PostgreSQL</li><li>Microsserviços</li></ul></div>
+        <div><h3 data-i18n="s_data">Dados & IA</h3><ul class="tags"><li>Google ADK</li><li>Vertex AI</li><li>TensorFlow</li><li>LLMs</li><li>Visão Computacional</li><li>pandas</li><li>Streamlit</li></ul></div>
+        <div><h3 data-i18n="s_tools">DevOps & Ferramentas</h3><ul class="tags"><li>Docker</li><li>Terraform</li><li>Google Cloud</li><li>AWS</li><li>GitHub Actions</li><li>Nginx</li><li>Git</li><li>Figma</li></ul></div>
       </div>
     </section>
 
     <section id="trajetoria" class="wrap section">
-      <h2><span class="num">04</span> <span data-i18n="path_t">Trajetória</span></h2>
+      <h2><span class="num">04</span> <span data-i18n="path_t">Experiência e trajetória</span></h2>
       <ol class="timeline">
-        <li><span class="when">2026</span><h3 data-i18n="t0_h">Produtos SaaS: HoraCerta e GoRunning</h3><p data-i18n="t0_p">Desenvolvimento full-stack de plataformas multi-tenant com Spring Boot, Next.js, PIX e deploy em VPS com Docker.</p></li>
-        <li><span class="when">2025</span><h3 data-i18n="t5_h">Sauter University — Desafio Fase 2</h3><p data-i18n="t5_p">Em equipe, construí um sistema de análise de perfis com agentes de IA (Google ADK), Cloud Run e Terraform.</p></li>
-        <li><span class="when">2025</span><h3 data-i18n="t1_h">Pesquisa PICP — eficiência de código gerado por LLMs</h3><p data-i18n="t1_p">Programa Institucional Contínuo de Pesquisa: comparação de energia, memória e desempenho entre modelos.</p></li>
-        <li><span class="when">2025</span><h3 data-i18n="t6_h">Sistemas Distribuídos — Blockchain camada 2 em IoT</h3><p data-i18n="t6_p">Projeto da disciplina: análise de desempenho de blockchain em dispositivos IoT de baixo desempenho.</p></li>
-        <li><span class="when">2023</span><h3 data-i18n="t2_h">Bootcamp Santander — Back-end Java</h3><p data-i18n="t2_p">Formação back-end com Java pela bolsa Santander 2023.</p></li>
-        <li><span class="when">2023</span><h3 data-i18n="t3_h">Rocketseat — Ignite</h3><p data-i18n="t3_p">Estudos de React e TypeScript, com projetos como o AdnFeed.</p></li>
-        <li><span class="when" data-i18n="now">Em curso</span><h3 data-i18n="t4_h">Ciência da Computação — UFAPE</h3><p data-i18n="t4_p">Graduação em andamento, com foco em engenharia de software, estruturas de dados e computação gráfica.</p></li>
+        <li><span class="when">out/2025 – atual</span><h3 data-i18n="e1_h">Desenvolvedor Full Stack · WS Assessoria e Consultoria Municipal</h3><p data-i18n="e1_p">Desenvolvimento do WS-Services, ecossistema de microsserviços para gestão pública municipal, de arquitetura a deploy. Migração do legado de contabilidade pública (normas do TCE/AUDESP) e módulos de Compras, Licitação e Almoxarifado, atendendo prefeituras como Correntes, Calçados, Paranatama e Bom Conselho (30+ unidades gestoras).</p></li>
+        <li><span class="when">ago/2026 – atual</span><h3 data-i18n="e2_h">Bolsista de Extensão PIBEX · UFAPE</h3><p data-i18n="e2_p">Desenvolvimento de aplicativo de apoio e informação para mulheres em situação de risco (Tecnologia Social e Prevenção ao Feminicídio), com foco em usabilidade, segurança e privacidade.</p></li>
+        <li><span class="when">set/2025 – atual</span><h3 data-i18n="e3_h">Monitor de Interação Humano-Computador · UFAPE</h3><p data-i18n="e3_p">Orientação de alunos em design de interface, prototipação e avaliação de usabilidade.</p></li>
+        <li><span class="when">2025</span><h3 data-i18n="e4_h">AI Specialist Program · Sauter University + Google Cloud</h3><p data-i18n="e4_p">Agente de IA para análise de perfis com Python, FastAPI, Google ADK, Vertex AI, Terraform e CI/CD.</p></li>
+        <li><span class="when">mai/2025 – mar/2026</span><h3 data-i18n="e5_h">Pesquisador de Iniciação Científica (PICP) · UFAPE</h3><p data-i18n="e5_p">Eficiência de energia, memória e desempenho de código gerado por LLMs, com análise estatística e dashboard interativo.</p></li>
+        <li><span class="when">jun/2024 – set/2025</span><h3 data-i18n="e6_h">Desenvolvedor Web/Java (estágio) · WS Assessoria e Consultoria Municipal</h3><p data-i18n="e6_p">Sistemas Java 8, JSF e PrimeFaces e consultas em PostgreSQL para prefeituras, além do contato com o ERP público e-Cidade.</p></li>
+        <li><span class="when">fev/2024 – mar/2025</span><h3 data-i18n="e7_h">Computer Vision Developer · Projeto MonitoraMar</h3><p data-i18n="e7_p">Modelos de visão computacional para detectar situações de risco a banhistas, com imagens de câmeras fixas e drones.</p></li>
+        <li><span class="when">abr/2024 – out/2024</span><h3 data-i18n="e8_h">Frontend Developer (PAVI) · UFAPE</h3><p data-i18n="e8_p">Frontend de solução interdisciplinar com Medicina Veterinária e dataset para classificação de fígados de felinos e ruminantes.</p></li>
+        <li><span class="when">jun/2023 – jun/2024</span><h3 data-i18n="e9_h">Desenvolvedor Full Stack e Monitor · LMTS/UFAPE</h3><p data-i18n="e9_p">Plataforma e aplicativo para Bancos Comunitários de Sementes Crioulas (COPPABACS); trabalho no CONEX 2023 e contribuição ao Selo ODS Educação 2024 da UFAPE.</p></li>
+        <li><span class="when">2023</span><h3 data-i18n="e10_h">Bootcamp Santander · Back-end Java</h3><p data-i18n="e10_p">Formação back-end com Java pela bolsa Santander 2023.</p></li>
+        <li><span class="when">2023</span><h3 data-i18n="e11_h">Rocketseat · Ignite</h3><p data-i18n="e11_p">Estudos de React e TypeScript, com projetos como o AdnFeed.</p></li>
+        <li><span class="when">jan/2022 – dez/2027</span><h3 data-i18n="e12_h">Ciência da Computação · UFAPE</h3><p data-i18n="e12_p">Bacharelado em andamento (conclusão prevista para dezembro de 2027).</p></li>
       </ol>
     </section>
 
@@ -139,6 +145,8 @@
         <p data-i18n="c_p">Estou aberto a estágio e a projetos onde eu possa contribuir e aprender. Me chame por e-mail ou em qualquer uma das redes abaixo.</p>
         <div class="cta center">
           <a class="btn primary" href="mailto:adenilson.ramos@ufape.edu.br">E-mail</a>
+          <a class="btn" href="curriculo/Curriculo-Adenilson-Ramos.pdf" download data-i18n="cv_pt">Currículo (PT)</a>
+          <a class="btn" href="curriculo/Resume-Adenilson-Ramos-EN.pdf" download data-i18n="cv_en">Resume (EN)</a>
           <a class="btn" href="https://wa.me/message/CXV5NGRDKMLXL1" target="_blank" rel="noopener">WhatsApp</a>
           <a class="btn" href="https://www.linkedin.com/in/adn-ramos" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn" href="https://github.com/AdnRamos" target="_blank" rel="noopener">GitHub</a>
