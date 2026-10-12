@@ -1,45 +1,28 @@
-<h1 align="center"> Dev Link </h1>
+# adnramos.github.io
 
-<p align="center">
-Programa exclusivo e gratuito, provido pela Rocketseat para o ensino de tecnologias WEB <br/>
-</p>
+Portfólio pessoal de **Adenilson Ramos** — graduando em Ciência da Computação (UFAPE), desenvolvedor full-stack.
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
+🔗 https://adnramos.github.io
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
+## Como funciona
 
-<br>
+HTML, CSS e JavaScript puros, sem build. Tema claro/escuro e PT/EN.
 
-<p align="center">
-  <img alt="LinkTree" src=".github/preview.jpg" width="100%">
-</p>
+Os projetos vêm de dois arquivos:
 
-## 🚀 Tecnologias
+| Arquivo | O que é | Quem atualiza |
+|---|---|---|
+| `data/repos.json` | Dados públicos do GitHub (descrição, estrelas, última atualização) | GitHub Action diário (`.github/workflows/sync-github.yml`) |
+| `data/projects.json` | Projetos em destaque (textos PT/EN, projetos privados) e lista `exclude` | Manual, só quando quiser mudar um destaque |
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+- Repositório público **novo** com descrição aparece sozinho em "Mais no GitHub".
+- Para esconder um repositório da lista automática, adicione o nome em `exclude`.
+- Para rodar a sincronização na hora: aba **Actions → Sync GitHub data → Run workflow**.
 
-- HTML e CSS
-- JavaScript
-- Git e Github
-- Figma
+## Rodando localmente
 
-## 💻 Projeto
+```bash
+python -m http.server 8000
+```
 
-Cartão de visita.
-
-- [Visite o projeto online](https://adnramos.github.io)
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/Lq1JCFXlTZGl9jk0Rzhj29/DevLinks-(Community)?node-id=0%3A1&t=pWqxz5KikqrKaIhA-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-
----
-
-
+Abra http://localhost:8000 (o site usa `fetch`, então não funciona abrindo o arquivo direto).

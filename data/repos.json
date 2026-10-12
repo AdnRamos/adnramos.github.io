@@ -1,0 +1,138 @@
+{
+  "updated_at": "2026-10-12T19:13:56.847Z",
+  "user": {
+    "public_repos": 21,
+    "followers": 34,
+    "created_at": "2022-12-28T20:59:00Z",
+    "contributions": 1929,
+    "stars": 2,
+    "languages": [
+      {
+        "name": "Python",
+        "percent": 41.7
+      },
+      {
+        "name": "Java",
+        "percent": 31
+      },
+      {
+        "name": "Shell",
+        "percent": 17
+      },
+      {
+        "name": "HTML",
+        "percent": 3.3
+      },
+      {
+        "name": "HCL",
+        "percent": 3.1
+      },
+      {
+        "name": "JavaScript",
+        "percent": 1.4
+      }
+    ]
+  },
+  "repos": [
+    {
+      "name": "AdnRamos",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "pushed_at": "2026-08-26T19:18:40Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/AdnRamos",
+      "topics": []
+    },
+    {
+      "name": "Analise-de-Perfil-no-LinkedIn-Google-ADK",
+      "description": null,
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-08-05T21:14:05Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/Analise-de-Perfil-no-LinkedIn-Google-ADK",
+      "topics": []
+    },
+    {
+      "name": "analyze-llm-code-efficiency",
+      "description": "Análise comparativa do consumo de energia, memória e desempenho de algoritmos gerados por diferentes Large Language Models (LLMs) em diversas linguagens de programação. Projeto do Programa Institucional Contínuo de Pesquisa (PICP 2025).",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-02-25T07:33:06Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/analyze-llm-code-efficiency",
+      "topics": []
+    },
+    {
+      "name": "Classificacao_Figados_Felino_Ruminantes",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "pushed_at": "2025-12-06T17:33:40Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/Classificacao_Figados_Felino_Ruminantes",
+      "topics": []
+    },
+    {
+      "name": "sauter_university_challenge",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "pushed_at": "2025-09-16T12:36:22Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/sauter_university_challenge",
+      "topics": []
+    },
+    {
+      "name": "blockchain-analysis-on-iot",
+      "description": "Análise de Blockchain Camada 2 em Dispositivos de Baixo Desempenho",
+      "language": "Shell",
+      "stars": 1,
+      "pushed_at": "2025-09-13T17:33:37Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/blockchain-analysis-on-iot",
+      "topics": []
+    },
+    {
+      "name": "sistema_de_reservas_de_espacos_em_universidades",
+      "description": "Sistema de gerenciamento de salas para Universidade Federal do Agreste de Pernambuco",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2024-02-22T20:12:52Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/sistema_de_reservas_de_espacos_em_universidades",
+      "topics": []
+    },
+    {
+      "name": "AdnFeed",
+      "description": "Projeto desenvolvido no modulo 1 do curso ignite ministrado pela Rocketseat.",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushed_at": "2023-10-29T23:48:30Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/AdnFeed",
+      "topics": []
+    },
+    {
+      "name": "GerenciamentoEstudantes",
+      "description": "Sistema será desenvolvido na disciplina de orientação a objetos. utilziando os frameworks Spring Boot e React.js. ",
+      "language": "Java",
+      "stars": 0,
+      "pushed_at": "2023-09-13T18:40:41Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/GerenciamentoEstudantes",
+      "topics": []
+    },
+    {
+      "name": "adnramos.github.io",
+      "description": null,
+      "language": "CSS",
+      "stars": 0,
+      "pushed_at": "2023-02-03T23:45:49Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/adnramos.github.io",
+      "topics": []
+    }
+  ]
+}
