@@ -39,6 +39,7 @@
       <nav aria-label="Principal">
         <a href="#sobre" data-i18n="nav_about">Sobre</a>
         <a href="#projetos" data-i18n="nav_projects">Projetos</a>
+        <a href="#design" data-i18n="nav_design">Design</a>
         <a href="#stack" data-i18n="nav_stack">Stack</a>
         <a href="#trajetoria" data-i18n="nav_path">Trajetória</a>
         <a href="#contato" data-i18n="nav_contact">Contato</a>
@@ -111,8 +112,134 @@
       <p class="more"><a class="btn" href="https://github.com/AdnRamos?tab=repositories" target="_blank" rel="noopener" data-i18n="all_repos">Ver todos os repositórios</a></p>
     </section>
 
+    <section id="design" class="wrap section">
+      <h2><span class="num">03</span> <span data-i18n="design_t">Product Design</span></h2>
+      <p class="sec-lead" data-i18n="design_lead">Além de código, desenho produtos: pesquiso o contexto, organizo fluxos e construo sistemas de design que o time consegue implementar.</p>
+
+      <article class="case">
+        <header class="case-head">
+          <span class="tag-top" data-i18n="ws_tag">Case · Design System · Gestão pública</span>
+          <h3 class="case-title" data-i18n="ws_title">WS-Service: um design system para o ecossistema de gestão municipal</h3>
+          <p class="case-sum" data-i18n="ws_sum">Prefeituras usam sistemas monolíticos, cada um com visual e lógica próprios. Para o WS-Service, desenhei uma base única (fundamentos, componentes, templates e shell de acesso) que dá a mesma cara e o mesmo comportamento a módulos como Contabilidade, Compras, Licitação, Frotas, Almoxarifado, Contratos, RH e Transparência.</p>
+          <dl class="case-meta">
+            <div><dt data-i18n="m_role">Papel</dt><dd data-i18n="ws_role">UX/UI e design system, do mapeamento de telas ao handoff</dd></div>
+            <div><dt data-i18n="m_tools">Ferramentas</dt><dd>Figma · Variables · Auto Layout · Material Icons</dd></div>
+            <div><dt data-i18n="m_year">Ano</dt><dd>2026</dd></div>
+          </dl>
+        </header>
+
+        <ul class="case-stats">
+          <li><b>8</b><span data-i18n="ws_s1">módulos desenhados sobre a mesma base</span></li>
+          <li><b>23</b><span data-i18n="ws_s2">componentes documentados</span></li>
+          <li><b>5</b><span data-i18n="ws_s3">templates de tela com anotações</span></li>
+          <li><b>80</b><span data-i18n="ws_s4">telas mapeadas só na Contabilidade</span></li>
+        </ul>
+
+        <button class="shot hero-shot" type="button" data-group="ws" data-full="assets/design/ws-template-crud.png">
+          <img src="assets/design/ws-template-crud.png" alt="Template de cadastro do WS-Service: menu lateral, formulário em seções e tabela de registros com filtros e paginação" loading="lazy" width="1440" height="1539">
+        </button>
+
+        <div class="case-steps">
+          <div>
+            <h4 data-i18n="ws_p_t">Problema</h4>
+            <p data-i18n="ws_p">Cada módulo nascia com telas diferentes para tarefas iguais (cadastrar, lançar, emitir relatório, exportar remessa). Isso aumentava o tempo de treinamento dos servidores e o retrabalho no front-end.</p>
+          </div>
+          <div>
+            <h4 data-i18n="ws_a_t">Abordagem</h4>
+            <p data-i18n="ws_a">Mapeei as telas do legado por módulo, agrupei as tarefas em cinco padrões (cadastro, lançamento contábil, relatório, remessa e árvore de contas) e transformei cada padrão em um template anotado, com regras de layout, estados e comportamento.</p>
+          </div>
+          <div>
+            <h4 data-i18n="ws_r_t">Resultado</h4>
+            <p data-i18n="ws_r">Um vocabulário visual comum: tokens de cor e tipografia, componentes alinhados à biblioteca usada no front-end e um shell de acesso compartilhado. Novos módulos partem de um template em vez de uma tela em branco.</p>
+          </div>
+        </div>
+
+        <div class="case-gallery">
+          <button class="shot" type="button" data-group="ws" data-full="assets/design/ws-fundamentos.png"><img src="assets/design/ws-fundamentos.png" alt="Fundamentos visuais: paletas de cor por função e escala tipográfica" loading="lazy"><span data-i18n="g1">Fundamentos</span></button>
+          <button class="shot" type="button" data-group="ws" data-full="assets/design/ws-componentes.png"><img src="assets/design/ws-componentes.png" alt="Biblioteca de componentes: botões, badges, campos, abas, cards e células de tabela" loading="lazy"><span data-i18n="g2">Componentes</span></button>
+          <button class="shot" type="button" data-group="ws" data-full="assets/design/ws-anotacao.png"><img src="assets/design/ws-anotacao.png" alt="Anotações do template de cadastro, explicando cada região da tela" loading="lazy"><span data-i18n="g3">Templates anotados</span></button>
+          <button class="shot" type="button" data-group="ws" data-full="assets/design/ws-painel.png"><img src="assets/design/ws-painel.png" alt="Painel do módulo de Contabilidade com indicadores e gráficos" loading="lazy"><span data-i18n="g4">Painel da Contabilidade</span></button>
+          <button class="shot" type="button" data-group="ws" data-full="assets/design/ws-login.png"><img src="assets/design/ws-login.png" alt="Tela de acesso compartilhada entre os sistemas" loading="lazy"><span data-i18n="g5">Shell de acesso</span></button>
+          <button class="shot" type="button" data-group="ws" data-full="assets/design/ws-frotas.png"><img src="assets/design/ws-frotas.png" alt="Tela do módulo de Frotas construída com os mesmos componentes" loading="lazy"><span data-i18n="g6">Módulo de Frotas</span></button>
+        </div>
+      </article>
+
+      <h3 class="sub" data-i18n="cases_more">Outros cases</h3>
+      <div class="cases">
+        <article class="mini-case">
+          <button class="shot cover" type="button" data-group="efrotas" data-full="assets/design/efrotas-dashboard.png"><img src="assets/design/efrotas-dashboard.png" alt="Painel do eFrotas redesenhado, com indicadores e gráficos" loading="lazy"></button>
+          <div class="mini-body">
+            <span class="tag-top" data-i18n="ef_tag">Redesign · Gestão de frota</span>
+            <h4>eFrotas</h4>
+            <p data-i18n="ef_desc">Redesign de um sistema de controle de combustível usado por prefeituras. Parti das telas do sistema legado, criei um style guide próprio (cores, tipografia, ícones, elevação) e redesenhei cerca de 49 telas, com modo claro e escuro.</p>
+            <span class="meta" data-i18n="ef_role">UX/UI · style guide · 2024</span>
+            <div class="thumbs"><button class="shot thumb" type="button" data-group="efrotas" data-full="assets/design/efrotas-antes-veiculo.jpg"><img src="assets/design/efrotas-antes-veiculo.jpg" alt="Tela de cadastro de veículo do sistema legado" loading="lazy"><span>Antes: legado</span></button><button class="shot thumb" type="button" data-group="efrotas" data-full="assets/design/efrotas-veiculo-claro.png"><img src="assets/design/efrotas-veiculo-claro.png" alt="Novo formulário de cadastro de veículo, modo claro" loading="lazy"><span>Depois: cadastro</span></button><button class="shot thumb" type="button" data-group="efrotas" data-full="assets/design/efrotas-veiculo-escuro.png"><img src="assets/design/efrotas-veiculo-escuro.png" alt="Novo formulário de cadastro de veículo, modo escuro" loading="lazy"><span>Modo escuro</span></button><button class="shot thumb" type="button" data-group="efrotas" data-full="assets/design/efrotas-cores.png"><img src="assets/design/efrotas-cores.png" alt="Sistema de cores do eFrotas com escalas de 50 a 900" loading="lazy"><span>Sistema de cores</span></button><button class="shot thumb" type="button" data-group="efrotas" data-full="assets/design/efrotas-antes-home.png"><img src="assets/design/efrotas-antes-home.png" alt="Tela inicial do sistema legado" loading="lazy"><span>Antes: início</span></button></div>
+          </div>
+        </article>
+        <article class="mini-case">
+          <button class="shot cover" type="button" data-group="pedeai" data-full="assets/design/pedeai-funcionarios-claro.png"><img src="assets/design/pedeai-funcionarios-claro.png" alt="Lista de funcionários com busca, filtros e ações, modo claro" loading="lazy"></button>
+          <div class="mini-body">
+            <span class="tag-top" data-i18n="pa_tag">Redesign · Iteração</span>
+            <h4>PedeAí Gestão (Barbearia UFAPE)</h4>
+            <p data-i18n="pa_desc">Sistema de gestão para barbearia: funcionários, serviços, produtos, promoções e agenda. Comecei com uma primeira versão, recebi feedback de revisão nos comentários do Figma e refiz tudo: nova hierarquia, tabelas mais legíveis, modo claro e escuro e versão mobile.</p>
+            <span class="meta" data-i18n="pa_role">UX/UI · 2024–2025</span>
+            <div class="thumbs"><button class="shot thumb" type="button" data-group="pedeai" data-full="assets/design/pedeai-antes.png"><img src="assets/design/pedeai-antes.png" alt="Primeira versão: tela de horários agendados" loading="lazy"><span>Antes: 1ª versão</span></button><button class="shot thumb" type="button" data-group="pedeai" data-full="assets/design/pedeai-funcionarios-escuro.png"><img src="assets/design/pedeai-funcionarios-escuro.png" alt="Lista de funcionários, modo escuro" loading="lazy"><span>Modo escuro</span></button><button class="shot thumb" type="button" data-group="pedeai" data-full="assets/design/pedeai-login.jpg"><img src="assets/design/pedeai-login.jpg" alt="Tela de login com a marca da barbearia" loading="lazy"><span>Login</span></button></div>
+          </div>
+        </article>
+        <article class="mini-case">
+          <button class="shot cover" type="button" data-group="geoedu" data-full="assets/design/geoedu-clima.jpg"><img src="assets/design/geoedu-clima.jpg" alt="Mapa com camada de clima e painel de visualização" loading="lazy"></button>
+          <div class="mini-body">
+            <span class="tag-top" data-i18n="ge_tag">Produto · Educação · Processo completo</span>
+            <h4>GeoEdu</h4>
+            <p data-i18n="ge_desc">Plataforma para professores e alunos explorarem dados de satélite sem precisar entender formatos científicos. Fiz o caminho todo: brainstorm, persona, matriz de priorização, sitemap, fluxo de usuário, wireframes de baixa fidelidade e um protótipo com cerca de 100 telas, com camadas de relevo, clima e biomas e linha do tempo de antes e depois.</p>
+            <span class="meta" data-i18n="ge_role">Projeto em equipe · 2025</span>
+            <div class="thumbs"><button class="shot thumb" type="button" data-group="geoedu" data-full="assets/design/geoedu-matriz.png"><img src="assets/design/geoedu-matriz.png" alt="Matriz de priorização impacto × ocorrência" loading="lazy"><span>Matriz de priorização</span></button><button class="shot thumb" type="button" data-group="geoedu" data-full="assets/design/geoedu-sitemap.png"><img src="assets/design/geoedu-sitemap.png" alt="Sitemap da plataforma" loading="lazy"><span>Sitemap</span></button><button class="shot thumb" type="button" data-group="geoedu" data-full="assets/design/geoedu-wireframe.png"><img src="assets/design/geoedu-wireframe.png" alt="Wireframe de baixa fidelidade do painel" loading="lazy"><span>Wireframe</span></button><button class="shot thumb" type="button" data-group="geoedu" data-full="assets/design/geoedu-linha-tempo.jpg"><img src="assets/design/geoedu-linha-tempo.jpg" alt="Comparação antes e depois em imagens de satélite" loading="lazy"><span>Linha do tempo</span></button><button class="shot thumb" type="button" data-group="geoedu" data-full="assets/design/geoedu-professor.jpg"><img src="assets/design/geoedu-professor.jpg" alt="Painel do professor com sala de aula, missões e favoritos" loading="lazy"><span>Painel do professor</span></button><button class="shot thumb" type="button" data-group="geoedu" data-full="assets/design/geoedu-fluxo.png"><img src="assets/design/geoedu-fluxo.png" alt="Fluxo de usuário" loading="lazy"><span>Fluxo de usuário</span></button></div>
+          </div>
+        </article>
+        <article class="mini-case phone">
+          <button class="shot cover" type="button" data-group="pibex" data-full="assets/design/pibex-boas-vindas.png"><img src="assets/design/pibex-boas-vindas.png" alt="Boas-vindas da triagem inicial" loading="lazy"></button>
+          <div class="mini-body">
+            <span class="tag-top" data-i18n="pb_tag">Extensão · Impacto social · 2026</span>
+            <h4>App de apoio a mulheres (PIBEX/UFAPE)</h4>
+            <p data-i18n="pb_desc">Aplicativo de informação e apoio para mulheres em situação de risco. A triagem inicial faz perguntas curtas e personaliza o conteúdo; a área Aprender explica direitos e a Lei Maria da Penha em linguagem simples. Algumas telas ficam fora do portfólio de propósito, para não expor os recursos de proteção das usuárias.</p>
+            <span class="meta" data-i18n="pb_role">Projeto em equipe · em andamento</span>
+            <div class="thumbs"><button class="shot thumb" type="button" data-group="pibex" data-full="assets/design/pibex-pergunta.png"><img src="assets/design/pibex-pergunta.png" alt="Pergunta da triagem com opções de resposta" loading="lazy"><span>Pergunta</span></button><button class="shot thumb" type="button" data-group="pibex" data-full="assets/design/pibex-resultado.png"><img src="assets/design/pibex-resultado.png" alt="Resultado da triagem com próximos passos" loading="lazy"><span>Resultado</span></button><button class="shot thumb" type="button" data-group="pibex" data-full="assets/design/pibex-aprender.png"><img src="assets/design/pibex-aprender.png" alt="Área Aprender com trilhas de conteúdo" loading="lazy"><span>Aprender</span></button><button class="shot thumb" type="button" data-group="pibex" data-full="assets/design/pibex-lei.png"><img src="assets/design/pibex-lei.png" alt="Explicação da Lei Maria da Penha" loading="lazy"><span>Lei Maria da Penha</span></button></div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="sub" data-i18n="cases_research">Pesquisa e discovery</h3>
+      <div class="cases">
+        <article class="mini-case">
+          <button class="shot cover" type="button" data-group="gorunning" data-full="assets/design/gorunning-hmw.png"><img src="assets/design/gorunning-hmw.png" alt="Dinâmica Como poderíamos com notas agrupadas" loading="lazy"></button>
+          <div class="mini-body">
+            <span class="tag-top" data-i18n="gr_tag">Discovery · Esportes</span>
+            <h4>GoRunning</h4>
+            <p data-i18n="gr_desc">Discovery da plataforma de eventos de corrida: matriz CSD (certezas, suposições e dúvidas), dinâmica &quot;Como poderíamos…&quot; e um MVP dividido em fases, que guiou o produto que desenvolvo hoje.</p>
+            <span class="meta" data-i18n="gr_role">2026</span>
+            <div class="thumbs"><button class="shot thumb" type="button" data-group="gorunning" data-full="assets/design/gorunning-mvp.png"><img src="assets/design/gorunning-mvp.png" alt="Sugestões para o MVP divididas em três fases" loading="lazy"><span>MVP em fases</span></button></div>
+          </div>
+        </article>
+        <article class="mini-case">
+          <button class="shot cover" type="button" data-group="sust" data-full="assets/design/sust-visao-geral.jpg"><img src="assets/design/sust-visao-geral.jpg" alt="Visão geral do board de pesquisa" loading="lazy"></button>
+          <div class="mini-body">
+            <span class="tag-top" data-i18n="su_tag">Pesquisa · Sustentabilidade</span>
+            <h4>Grupo Sustentabilidade</h4>
+            <p data-i18n="su_desc">Pesquisa em grupo: hipóteses (econômicas, de sistema e de usuários), desk research, pesquisa quantitativa, matriz CSD e benchmark com análise SWOT de IKEA, Cataki, Uber Flash e Cresci e Perdi, fechando em insights.</p>
+            <span class="meta" data-i18n="su_role">Projeto em equipe · 2026</span>
+            <div class="thumbs"><button class="shot thumb" type="button" data-group="sust" data-full="assets/design/sust-benchmark.jpg"><img src="assets/design/sust-benchmark.jpg" alt="Benchmark com análise SWOT de quatro empresas" loading="lazy"><span>Benchmark SWOT</span></button><button class="shot thumb" type="button" data-group="sust" data-full="assets/design/sust-pesquisa.jpg"><img src="assets/design/sust-pesquisa.jpg" alt="Desk research e gráficos da pesquisa quantitativa" loading="lazy"><span>Desk e quantitativa</span></button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <dialog id="lightbox" aria-label="Imagem ampliada">
+      <div class="lb-bar"><span class="lb-cap"></span><span class="lb-nav"><button type="button" class="chip lb-prev" aria-label="Anterior">←</button><button type="button" class="chip lb-next" aria-label="Próxima">→</button><button type="button" class="chip lb-close" aria-label="Fechar">✕</button></span></div>
+      <img alt="">
+    </dialog>
+
     <section id="stack" class="wrap section">
-      <h2><span class="num">03</span> <span data-i18n="stack_t">Stack & ferramentas</span></h2>
+      <h2><span class="num">04</span> <span data-i18n="stack_t">Stack & ferramentas</span></h2>
       <div class="stack">
         <div><h3>Front-end</h3><ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>React.js</li><li>Next.js</li><li>Flutter</li><li>HTML</li><li>CSS</li><li>Tailwind CSS</li></ul></div>
         <div><h3>Back-end</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>JSF / PrimeFaces</li><li>C / C++</li><li>PHP</li><li>Python</li><li>FastAPI</li><li>Node.js</li><li>PostgreSQL</li><li>APIs REST</li><li>Microsserviços</li></ul></div>
@@ -122,7 +249,7 @@
     </section>
 
     <section id="trajetoria" class="wrap section">
-      <h2><span class="num">04</span> <span data-i18n="path_t">Experiência e trajetória</span></h2>
+      <h2><span class="num">05</span> <span data-i18n="path_t">Experiência e trajetória</span></h2>
       <ol class="timeline">
         <li><span class="when">out/2025 – atual</span><h3 data-i18n="e1_h">Desenvolvedor Full Stack · WS Assessoria e Consultoria Municipal</h3><p data-i18n="e1_p">Desenvolvimento do WS-Services, ecossistema de microsserviços para gestão pública municipal, de arquitetura a deploy. Migração do legado de contabilidade pública (normas do TCE/AUDESP) e módulos de Compras, Licitação e Almoxarifado, atendendo prefeituras como Correntes, Calçados, Paranatama e Bom Conselho (30+ unidades gestoras).</p></li>
         <li><span class="when">ago/2026 – atual</span><h3 data-i18n="e2_h">Bolsista de Extensão PIBEX · UFAPE</h3><p data-i18n="e2_p">Desenvolvimento de aplicativo de apoio e informação para mulheres em situação de risco (Tecnologia Social e Prevenção ao Feminicídio), com foco em usabilidade, segurança e privacidade.</p></li>

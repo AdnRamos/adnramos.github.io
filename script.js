@@ -1,5 +1,5 @@
 const EN = {
-  skip: 'Skip to content', nav_about: 'About', nav_projects: 'Projects', nav_stack: 'Stack', nav_path: 'Journey', nav_contact: 'Contact',
+  skip: 'Skip to content', nav_about: 'About', nav_projects: 'Projects', nav_design: 'Design', nav_stack: 'Stack', nav_path: 'Journey', nav_contact: 'Contact',
   hi: "Hi, I'm",
   lead: 'Computer Science undergrad at UFAPE. I build public-sector systems for city governments with Java and Spring Boot, web apps with React and Next.js, and research AI, LLMs and computer vision.',
   cta_projects: 'See projects', cta_contact: 'Get in touch', loc: '📍 Garanhuns, Brazil',
@@ -22,6 +22,36 @@ const EN = {
   p7: 'App to track daily habits, with a live demo.',
   p9: "2D/3D rendering, modeling, lighting and animation, including an interactive Rubik's Cube in OpenGL.",
   more_t: 'More on GitHub', updated: 'updated', demo: 'Live demo →', private: 'Private code', research_w: 'Academic work', all_repos: 'See all repositories',
+  design_t: 'Product Design',
+  design_lead: 'Beyond code, I design products: I research the context, organize flows and build design systems the team can actually implement.',
+  ws_tag: 'Case · Design System · Public sector', ws_title: 'WS-Service: a design system for a municipal management ecosystem',
+  ws_sum: 'City governments run monolithic systems, each with its own look and logic. For WS-Service I designed a single foundation (tokens, components, templates and an access shell) that gives the same look and behavior to modules such as Accounting, Procurement, Bidding, Fleet, Warehouse, Contracts, HR and Transparency.',
+  m_role: 'Role', ws_role: 'UX/UI and design system, from screen mapping to handoff', m_tools: 'Tools', m_year: 'Year',
+  ws_s1: 'modules designed on the same foundation', ws_s2: 'documented components', ws_s3: 'annotated screen templates', ws_s4: 'screens mapped in Accounting alone',
+  ws_p_t: 'Problem', ws_p: 'Each module was born with different screens for the same tasks (create, post, report, export). That made training public servants slower and caused rework on the front-end.',
+  ws_a_t: 'Approach', ws_a: 'I mapped the legacy screens module by module, grouped the tasks into five patterns (record form, accounting entry, report, export file and chart-of-accounts tree) and turned each pattern into an annotated template with layout, state and behavior rules.',
+  ws_r_t: 'Outcome', ws_r: 'A shared visual vocabulary: color and type tokens, components aligned with the front-end library and a shared access shell. New modules start from a template instead of a blank screen.',
+  ef_tag: "Redesign · Fleet management",
+  ef_desc: "Redesign of a fuel control system used by city governments. I started from the legacy screens, built a dedicated style guide (color, type, icons, elevation) and redesigned about 49 screens in light and dark mode.",
+  ef_role: "UX/UI · style guide · 2024",
+  pa_tag: "Redesign · Iteration",
+  pa_desc: "Management system for a barbershop: staff, services, products, promotions and scheduling. I shipped a first version, got review feedback through Figma comments and rebuilt it: new hierarchy, more readable tables, light and dark mode and a mobile version.",
+  pa_role: "UX/UI · 2024–2025",
+  ge_tag: "Product · Education · End-to-end",
+  ge_desc: "A platform for teachers and students to explore satellite data without dealing with scientific formats. I covered the whole path: brainstorm, persona, prioritization matrix, sitemap, user flow, low-fi wireframes and a prototype of about 100 screens, with terrain, climate and biome layers and a before/after timeline.",
+  ge_role: "Team project · 2025",
+  pb_tag: "Outreach · Social impact · 2026",
+  pb_desc: "Information and support app for women at risk. A short initial screening personalizes the content, and the Learn area explains rights and the Maria da Penha Law in plain language. Some screens are left out on purpose so the safety features stay private.",
+  pb_role: "Team project · ongoing",
+  gr_tag: "Discovery · Sports",
+  gr_desc: "Discovery for the running events platform: a CSD matrix (certainties, assumptions, doubts), a \"How might we…\" session and an MVP split into phases, which shaped the product I build today.",
+  gr_role: "2026",
+  su_tag: "Research · Sustainability",
+  su_desc: "Group research: hypotheses (economic, system and user), desk research, a quantitative survey, a CSD matrix and a SWOT benchmark of IKEA, Cataki, Uber Flash and Cresci e Perdi, closing with insights.",
+  su_role: "Team project · 2026",
+  cases_more: "More case studies",
+  cases_research: "Research and discovery",
+  g1: 'Foundations', g2: 'Components', g3: 'Annotated templates', g4: 'Accounting dashboard', g5: 'Access shell', g6: 'Fleet module',
   stack_t: 'Stack & tools', s_data: 'Data & AI', s_tools: 'DevOps & Tools',
   path_t: 'Experience & journey', now: 'Ongoing', cv: 'Download resume', cv_pt: 'Currículo (PT)', cv_en: 'Resume (EN)',
   e1_h: "Full Stack Developer · WS Assessoria e Consultoria Municipal", e1_p: "Building WS-Services, a microservices ecosystem for municipal public management, from architecture to deployment. Migrated the legacy public accounting system (TCE/AUDESP rules) and built the Procurement, Bidding and Warehouse modules, serving municipalities such as Correntes, Calçados, Paranatama and Bom Conselho (30+ management units).",
@@ -135,5 +165,30 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
 function observe(list) { list.forEach((e) => { e.classList.add('reveal'); io.observe(e); }); }
-observe(document.querySelectorAll('.section, .stack > div, .timeline li'));
+observe(document.querySelectorAll('.section, .stack > div, .timeline li, .case-steps > div, .case-gallery .shot, .mini-case'));
 load();
+
+const lb = document.getElementById('lightbox');
+if (lb && lb.showModal) {
+  const lbImg = lb.querySelector('img');
+  const lbCap = lb.querySelector('.lb-cap');
+  let group = [], idx = 0;
+  const show = (i) => {
+    idx = (i + group.length) % group.length;
+    const b = group[idx]; const img = b.querySelector('img');
+    lbImg.src = b.dataset.full; lbImg.alt = img ? img.alt : '';
+    lbCap.textContent = (img ? img.alt : '') + (group.length > 1 ? ` (${idx + 1}/${group.length})` : '');
+    lb.querySelectorAll('.lb-prev, .lb-next').forEach((x) => { x.hidden = group.length < 2; });
+  };
+  document.querySelectorAll('.shot').forEach((b) => b.addEventListener('click', () => {
+    group = [...document.querySelectorAll(`.shot[data-group="${b.dataset.group}"]`)];
+    if (!group.length) group = [b];
+    show(group.indexOf(b));
+    lb.showModal();
+  }));
+  lb.querySelector('.lb-close').addEventListener('click', () => lb.close());
+  lb.querySelector('.lb-prev').addEventListener('click', () => show(idx - 1));
+  lb.querySelector('.lb-next').addEventListener('click', () => show(idx + 1));
+  lb.addEventListener('keydown', (e) => { if (e.key === 'ArrowLeft') show(idx - 1); if (e.key === 'ArrowRight') show(idx + 1); });
+  lb.addEventListener('click', (e) => { if (e.target === lb) lb.close(); });
+}
