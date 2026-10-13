@@ -1,35 +1,35 @@
 {
-  "updated_at": "2026-10-12T19:13:56.847Z",
+  "updated_at": "2026-10-13T06:34:24.486Z",
   "user": {
     "public_repos": 21,
     "followers": 34,
     "created_at": "2022-12-28T20:59:00Z",
-    "contributions": 1929,
+    "contributions": 1934,
     "stars": 2,
     "languages": [
       {
         "name": "Python",
-        "percent": 41.7
+        "percent": 40
       },
       {
         "name": "Java",
-        "percent": 31
+        "percent": 29.7
       },
       {
         "name": "Shell",
-        "percent": 17
+        "percent": 16.3
       },
       {
         "name": "HTML",
-        "percent": 3.3
-      },
-      {
-        "name": "HCL",
-        "percent": 3.1
+        "percent": 4.7
       },
       {
         "name": "JavaScript",
-        "percent": 1.4
+        "percent": 3
+      },
+      {
+        "name": "HCL",
+        "percent": 3
       }
     ]
   },
@@ -39,9 +39,19 @@
       "description": null,
       "language": null,
       "stars": 0,
-      "pushed_at": "2026-08-26T19:18:40Z",
+      "pushed_at": "2026-10-12T20:03:15Z",
       "homepage": null,
       "url": "https://github.com/AdnRamos/AdnRamos",
+      "topics": []
+    },
+    {
+      "name": "adnramos.github.io",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "pushed_at": "2026-10-12T20:03:12Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/adnramos.github.io",
       "topics": []
     },
     {
@@ -122,16 +132,6 @@
       "pushed_at": "2023-09-13T18:40:41Z",
       "homepage": null,
       "url": "https://github.com/AdnRamos/GerenciamentoEstudantes",
-      "topics": []
-    },
-    {
-      "name": "adnramos.github.io",
-      "description": null,
-      "language": "CSS",
-      "stars": 0,
-      "pushed_at": "2023-02-03T23:45:49Z",
-      "homepage": null,
-      "url": "https://github.com/AdnRamos/adnramos.github.io",
       "topics": []
     }
   ]
