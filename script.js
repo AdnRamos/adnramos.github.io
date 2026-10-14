@@ -66,8 +66,7 @@ const EN = {
   e10_h: "Santander Bootcamp · Java Back-end", e10_p: "Java back-end training through the Santander 2023 scholarship.",
   e11_h: "Rocketseat · Ignite", e11_p: "React and TypeScript studies, with projects such as AdnFeed.",
   e12_h: "Computer Science · UFAPE", e12_p: "Ongoing B.Sc. (expected graduation December 2027).",
-  c_t: "Let's talk?", c_p: 'I am open to internships and projects where I can contribute and learn. Reach out by email or on any of the networks below.',
-  foot: 'Built with HTML, CSS and JavaScript, with AI assistance (Claude).'
+  c_t: "Let's talk?", c_p: 'I am open to internships and projects where I can contribute and learn. Reach out by email or on any of the networks below.'
 };
 
 let DATA = { projects: { featured: [], exclude: [] }, repos: null };
