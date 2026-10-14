@@ -1,39 +1,49 @@
 {
-  "updated_at": "2026-10-13T06:34:24.486Z",
+  "updated_at": "2026-10-14T06:29:27.226Z",
   "user": {
     "public_repos": 21,
-    "followers": 34,
+    "followers": 33,
     "created_at": "2022-12-28T20:59:00Z",
-    "contributions": 1934,
+    "contributions": 1936,
     "stars": 2,
     "languages": [
       {
         "name": "Python",
-        "percent": 40
+        "percent": 38.7
       },
       {
         "name": "Java",
-        "percent": 29.7
+        "percent": 28.8
       },
       {
         "name": "Shell",
-        "percent": 16.3
+        "percent": 15.8
       },
       {
         "name": "HTML",
-        "percent": 4.7
+        "percent": 6.6
       },
       {
         "name": "JavaScript",
-        "percent": 3
+        "percent": 3.5
       },
       {
         "name": "HCL",
-        "percent": 3
+        "percent": 2.9
       }
     ]
   },
   "repos": [
+    {
+      "name": "adnramos.github.io",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "pushed_at": "2026-10-13T21:44:30Z",
+      "homepage": null,
+      "url": "https://github.com/AdnRamos/adnramos.github.io",
+      "topics": []
+    },
     {
       "name": "AdnRamos",
       "description": null,
@@ -42,16 +52,6 @@
       "pushed_at": "2026-10-12T20:03:15Z",
       "homepage": null,
       "url": "https://github.com/AdnRamos/AdnRamos",
-      "topics": []
-    },
-    {
-      "name": "adnramos.github.io",
-      "description": null,
-      "language": "HTML",
-      "stars": 0,
-      "pushed_at": "2026-10-12T20:03:12Z",
-      "homepage": null,
-      "url": "https://github.com/AdnRamos/adnramos.github.io",
       "topics": []
     },
     {
